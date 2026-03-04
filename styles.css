@@ -1,0 +1,267 @@
+/* Mobile Phones/Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5F5DD;
+}
+
+header {
+    border: 5px solid #90664B;
+    width: 100%;
+    height: 10vh;
+    font-size: 1rem;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    border: 5px solid #90664B;
+    width: 100%;
+    height: 20vh;
+    font-size: 1rem;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Header Elements */
+.logo_circle {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    border: 3px solid #AFCB8E;
+    margin-right: 10px;
+}
+
+.nav_box {
+    width: 40vw;
+    margin-left: auto;
+    align-items: center;
+    padding: 5px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+}
+
+.nav_link_box {
+    width:auto;
+    height: 4vh;
+    border: 3px solid #AFCB8E;
+    padding: auto;
+    text-align: center;
+    font-size: 8pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Body Elements */
+/* Today's Favorite Box Elements*/
+.favorite_box {
+    width: 70vw;
+    height:20vh;
+    margin: 80px auto;
+    padding: 0px 20px;
+    border: 3px solid #90664B;
+    align-items: center;
+}
+
+.favorite_heading_box {
+    width: 40vw;
+    height: 3vh;
+    margin: 0px auto;
+    border: 3px solid #90664B;
+    border-top: none;
+}
+
+.favorite_info_box {
+    width: 64vw;
+    height: 12vh;
+    margin: 10px auto;
+    display: flex;
+}
+
+.favorite_img_box {
+    width: 20vw;
+    height: 12vh;
+    border: 3px solid #AFCB8E;
+}
+
+.favorite_text_box {
+    width: 40vw;
+    height: 12vh;
+    border: 3px solid black;
+    margin: 0px auto;
+}
+
+/* Recipe Genre Boxes*/
+.genre_page_container {
+    width: 90vw;
+    margin: 50px auto 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.genre_page_box {
+    height: 12vh;
+    border: 3px solid #AFCB8E;
+}
+
+/* Recipe Page*/
+.headerp1 {
+    border: 5px solid #90664B;
+    width: 100%;
+    height: 10vh;
+    font-size: 1rem;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.title_box {
+    width: auto;
+    height: auto;
+    margin-right: 100px;
+    font-size: 10pt;
+}
+
+.title_box > h1{
+    font-size: 18pt;
+}
+
+/* Body Elements*/
+.genre_tab_box {
+    width: 70vw;
+    height:12vh;
+    margin: 50px auto;
+    padding: 0px 20px;
+    border: 3px solid #AFCB8E;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 50pt;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    /* Universal Elements */
+    header, footer {
+        height: 15vh;
+        font-size: 1.5rem;
+        padding: 0px 30px;
+    }
+
+    /* Header Elements */
+    .logo_circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav_box {
+        width: 300px;
+        height: 60px;
+        margin-left: 400px;
+        align-items: center;
+        padding: 5px 0px;
+        display: flex;
+    }
+
+    .nav_link_box {
+        width: 60px;
+        height: 30px;
+        border: 3px solid #AFCB8E;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 12pt;
+    }
+
+    /* Body Elements */
+    /* Today's Favorite Box Elements */
+    .favorite_box {
+        width: 500px;
+        height:250px;
+        margin: 50px auto;
+        padding: 0px 20px;
+        border: 3px solid #90664B;
+        align-items: center;
+    }
+
+    .favorite_heading_box {
+        width:150px;
+        height: 25px;
+        margin: 0px auto;
+        border: 3px solid #90664B;
+        border-top: none;
+    }
+
+    .favorite_info_box {
+        width: 450px;
+        height: 180px;
+        margin: 10px auto;
+        display: flex;
+    }
+
+    .favorite_img_box {
+        width: 150px;
+        height: 180px;
+        border: 3px solid #AFCB8E;
+    }
+
+    .favorite_text_box {
+        width: 250px;
+        height: 180px;
+        border: 3px solid black;
+        margin: 0px auto;
+    }
+
+    /* Recipe Genre Boxes */
+    .genre_page_container {
+        width: 90vw;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+    }
+
+    .genre_page_box {
+        height: 180px;
+        border: 3px solid #AFCB8E;
+    }
+
+    /* Recipe Page*/
+    /* Header Elements */
+    .headerp1 {
+        height: 20vh;
+        font-size: 1.5rem;
+        padding: 0px 30px;
+    }
+
+    .title_box {
+        width: auto;
+        height: auto;
+        margin-right: 100px;
+        font-size: 16pt;
+    }
+
+    .title_box > h1{
+        font-size: 32pt;
+    }
+
+    /* Body Elements*/
+    .genre_tab_box {
+        width: 600px;
+        height:150px;
+        margin: 50px auto;
+        padding: 0px 20px;
+        border: 3px solid #AFCB8E;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 50pt;
+    }
+}
