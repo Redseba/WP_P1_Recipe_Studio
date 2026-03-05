@@ -26,6 +26,21 @@ footer {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
+
+body {
+    animation: fadeIn .5s ease-out;
+}
+/* Keyframes */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 /* Header Elements */
 .logo_circle {
     width: 7vh;
@@ -45,6 +60,16 @@ footer {
     align-items: stretch;
 }
 
+.nav_box2 {
+    width: 40vw;
+    margin-left: auto;
+    align-items: center;
+    padding: 5px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+}
+
 .nav_link_box {
     width:auto;
     height: 4vh;
@@ -55,6 +80,16 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav_link_box:hover {
+    background-color: #AFCB8E;
+    transform: translateY(-5px);
+}
+
+.nav_link_box p {
+    background-color: inherit;
 }
 
 /* Body Elements */
@@ -108,6 +143,11 @@ footer {
 .genre_page_box {
     height: 12vh;
     border: 3px solid #AFCB8E;
+    transition: transform 0.3s ease;
+}
+
+.genre_page_box:hover {
+    transform: translateY(-5px);
 }
 
 /* Recipe Page*/
@@ -144,6 +184,179 @@ footer {
     align-items: center;
     justify-content: flex-end;
     font-size: 50pt;
+    transition: transform .3s ease;
+}
+
+.genre_tab_box:hover {
+    transform: translateY(-5px) scale(1.2);
+}
+
+/* Breakfast Page */
+.recipe_title_box {
+    width: 60vw;
+    height: 10vh;
+    margin: 50px auto;
+    border: 3px solid #90664B;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe_box {
+    width: 70vw;
+    height: 15vh;
+    margin: 50px auto;
+    padding: 20px 20px;
+    border: 3px solid #AFCB8E;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 24pt;
+    transition: transform .3s ease;
+}
+
+.recipe_box:hover {
+    transform: translateY(-5px) scale(1.2);
+}
+
+.recipe_img_box {
+    width: 20vw;
+    height: 8vh;
+    border: 3px solid #AFCB8E;
+    margin-right: 80px;
+}
+
+/* Modal */
+/* This Modal is made through pure CSS, however it is not ours*/
+/* This CSS was provided through https://webdesign.tutsplus.com/css-only-modal--cms-107772t*/
+/* The reasoning for the use of outisde of code was due to our current understanding of CSS not being able to create a modal from scratch*/
+/* The problem this code snippet solves is the reduction of unneccessary and redunant HTML pages, what we mean is that originally we had plan to make 15 recipes pages for all inputted recipes*/
+/* The 15 seperate HTML would've heavily slowed our progress when it came to code development, we surmised that using a pop-up like object we could reduce the time put into development while being overall more efficient*/
+/* This modal would generate a pop up page that displays desired recipe information without generating seperate HTML pages*/
+.modal-btn {
+  transition: background 250ms;
+  padding: 20px 24px;
+  border-radius: 4px;
+  background-color: #AFCB8E;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin: 20px 0px 20px;
+  display: inline-block;
+  text-decoration: none;
+  align-self: center;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #90664B;
+}
+
+.modal {
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 2;
+}
+
+.modal:not(:target) {
+  visibility: hidden;
+  transition-delay: 500ms;
+  transition-property: visibility;
+}
+
+.modal:target .modal-content {
+  transform: translateY(100vh);
+  animation: 500ms ease-in-out slideUp forwards;
+}
+
+.modal:not(:target) .modal-content {
+  transform: translateY(0);
+  animation: 500ms ease-out slideDown forwards;
+}
+
+.modal:target .modal-overlay {
+  opacity: 0;
+  animation: 500ms linear fadeIn forwards;
+}
+
+.modal:not(:target) .modal-overlay {
+  opacity: 1;
+  animation: 500ms linear fadeOut forwards;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+}
+
+.modal-content {
+  transition: transform 1s;
+  background: #fff;
+  width: 75%;
+  position: relative;
+  margin: auto;
+  height: 75%;
+  padding: 48px 24px;
+  border-radius: 4px;
+  max-width: 1000px;
+}
+
+.modal-close {
+  font-size: 36px;
+  text-decoration: none;
+  color: inherit;
+  position: absolute;
+  right: 24px;
+  top: 10px;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100vh);
+  }
 }
 
 /* Desktop */
@@ -153,6 +366,20 @@ footer {
         height: 15vh;
         font-size: 1.5rem;
         padding: 0px 30px;
+    }
+
+    /* Modal */
+    .modal-btn {
+        transition: background 250ms;
+        padding: 48px 80px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        margin: 20px 20px;
+        display: inline-block;
+        text-decoration: none;
+        align-self: center;
     }
 
     /* Header Elements */
@@ -263,5 +490,36 @@ footer {
         align-items: center;
         justify-content: flex-end;
         font-size: 50pt;
+    }
+
+    /* Recipe: Genre Page */
+    .recipe_title_box {
+        width: 40vw;
+        height: 15vh;
+        margin: 50px auto;
+        border: 3px solid #90664B;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recipe_box {
+        width: 70vw;
+        height: 25vh;
+        margin: 50px auto;
+        padding: 20px 20px;
+        border: 3px solid #AFCB8E;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 24pt;
+    }
+
+    .recipe_img_box {
+        width: 20vw;
+        height: 18vh;
+        border: 3px solid #AFCB8E;
+        margin-right: 150px;
     }
 }
