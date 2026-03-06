@@ -231,7 +231,7 @@ body {
 /* This Modal is made through pure CSS, however, it is not ours*/
 /* This CSS was provided through https://webdesign.tutsplus.com/css-only-modal--cms-107772t*/
 /* The reasoning for the use of outside of code was due to our current understanding of CSS not being able to create a modal from scratch*/
-/* The problem this code snippet solves is the reduction of unneccessary and redundant HTML pages, what we mean is that originally we had planned to make 15 recipe pages for all inputted recipes*/
+/* The problem this code snippet solves is the reduction of unnecessary and redundant HTML pages, what we mean is that originally we had planned to make 15 recipe pages for all inputted recipes*/
 /* The 15 separate HTML would've heavily slowed our progress when it came to code development, we surmised that using a pop-up-like object we could reduce the time put into development while being overall more efficient*/
 /* This modal would generate a pop-up page that displays desired recipe information without generating separate HTML pages*/
 .modal-btn {
