@@ -137,3 +137,22 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# npm
+.npm
+*.tgz
+
+# VSCode testing
+.vscode-test

@@ -150,6 +150,14 @@ body {
     transform: translateY(-5px);
 }
 
+.about_box {
+    width: 40vw;
+    height: 3vh;
+    margin: 0px auto;
+    border: 3px solid #90664B;
+    border-top: none;
+}
+
 /* Recipe Page*/
 .headerp1 {
     border: 5px solid #90664B;
@@ -183,7 +191,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 50pt;
+    font-size: 32pt;
     transition: transform .3s ease;
 }
 
@@ -457,6 +465,16 @@ body {
     .genre_page_box {
         height: 180px;
         border: 3px solid #AFCB8E;
+    }
+
+    .about_box {
+        width: 500px;
+        height:250px;
+        margin: 50px auto;
+        padding: 0px 20px;
+        border: 3px solid #90664B;
+        align-items: center;
+        text-align: center;
     }
 
     /* Recipe Page*/
