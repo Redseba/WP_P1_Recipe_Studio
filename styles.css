@@ -24,12 +24,12 @@ footer {
     padding: 0px 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    display: contents;
 }
 
 body {
@@ -48,6 +48,13 @@ body {
     border-radius: 50%;
     border: 3px solid #AFCB8E;
     margin-right: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo_circle a {
+    display: block !important;
+    width: 100%;
 }
 
 .nav_box {
@@ -92,6 +99,16 @@ body {
     background-color: inherit;
 }
 
+.footer_member {
+    display: flex;
+    flex-direction: column;
+    font-size: 8pt;
+    margin: 0px 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 /* Body Elements */
 /* Today's Favorite Box Elements*/
 .favorite_box {
@@ -109,6 +126,7 @@ body {
     margin: 0px auto;
     border: 3px solid #90664B;
     border-top: none;
+    text-align: center;
 }
 
 .favorite_info_box {
@@ -122,13 +140,23 @@ body {
     width: 20vw;
     height: 12vh;
     border: 3px solid #AFCB8E;
+    background-size: cover;
+    background-position: center;
+}
+
+.favorite_img_box a {
+    display: block !important;
+    width: 100%;
 }
 
 .favorite_text_box {
     width: 40vw;
     height: 12vh;
-    border: 3px solid black;
     margin: 0px auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Recipe Genre Boxes*/
@@ -140,26 +168,70 @@ body {
     gap: 10px;
 }
 
+.genre_page_container a {
+    display: block !important;
+    width: 100%;
+}
+
 .genre_page_box {
     height: 12vh;
     border: 3px solid #AFCB8E;
     transition: transform 0.3s ease;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .genre_page_box:hover {
     transform: translateY(-5px);
 }
 
+/* Images */
+.logo {
+    background-image: url(assets/logo.png);
+}
+
+.breakfast {
+    background-image: url(assets/breakfast.png);
+}
+
+.appetizer {
+    background-image: url(assets/appetizer.png);
+}
+
+.lunch {
+    background-image: url(assets/lunch.png);
+}
+
+.dinner {
+    background-image: url(assets/dinner.png);
+}
+
+.dessert {
+    background-image: url(assets/dessert.png);
+}
+
+/* About Elements */
 .about_box {
     width: 40vw;
     height: 10vh;
     margin: 0px auto;
     border: 3px solid #90664B;
     margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
-.about_box > h2 {
-    font-size: 12pt;
+.about_box > div > h2 {
+    font-size: 8pt;
+}
+
+.about_box > p {
+    font-size: 5pt;
 }
 
 /* Recipe Page*/
@@ -197,6 +269,14 @@ body {
     justify-content: flex-end;
     font-size: 32pt;
     transition: transform .3s ease;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.genre_tab_box p {
+    position: relative;
+    z-index: 1;
 }
 
 .genre_tab_box:hover {
@@ -237,6 +317,47 @@ body {
     height: 8vh;
     border: 3px solid #AFCB8E;
     margin-right: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+.recipe_img_box a {
+    display: block !important;
+    width: 100%;
+}
+
+/* Recipe Images */
+/* Breakfast */
+.chickandwaff {
+    background-image: url(assets/recipes_be/c&w.png);
+}
+.avocado {
+    background-image: url(assets/recipes_be/avocado.png);
+}
+.bowl {
+    background-image: url(assets/recipes_be/bowl.png);
+}
+
+/* Appetizers */
+.mozza {
+    background-image: url(assets/recipes_ap/mozza.png);
+}
+.bites {
+    background-image: url(assets/recipes_ap/bites.png);
+}
+.poppers {
+    background-image: url(assets/recipes_ap/poppers.png);
+}
+
+/* Lunch */
+.sandwich {
+    background-image: url(assets/recipes_lu/sandwich.png);
+}
+.thai {
+    background-image: url(assets/recipes_lu/thai.png);
+}
+.salmon {
+    background-image: url(assets/recipes_lu/salmon.png);
 }
 
 /* Modal */
@@ -247,18 +368,23 @@ body {
 /* The 15 separate HTML would've heavily slowed our progress when it came to code development, we surmised that using a pop-up-like object we could reduce the time put into development while being overall more efficient*/
 /* This modal would generate a pop-up page that displays desired recipe information without generating separate HTML pages*/
 .modal-btn {
-  transition: background 250ms;
-  padding: 20px 24px;
-  border-radius: 4px;
-  background-color: #AFCB8E;
-  color: #fcfcfc;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  margin: 20px 0px 20px;
-  display: inline-block;
-  text-decoration: none;
-  align-self: center;
+    transition: background 250ms;
+    width: 20vw;
+    height: 8vh;
+    padding: 0px;
+    border-radius: 4px;
+    background-color: #AFCB8E;
+    color: #fcfcfc;
+    text-transform: uppercase;
+    font-size: 6pt;
+    letter-spacing: 0.1em;
+    margin: 20px 0px 20px;
+    display: flex;
+    text-decoration: none;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .modal-btn:hover,
@@ -316,10 +442,12 @@ body {
   width: 75%;
   position: relative;
   margin: auto;
-  height: 75%;
+  height: auto;
+  max-height: 75vh;
   padding: 48px 24px;
   border-radius: 4px;
   max-width: 1000px;
+  overflow-y: auto;
 }
 
 .modal-close {
@@ -380,18 +508,27 @@ body {
         padding: 0px 30px;
     }
 
+    a {
+        display: contents;
+    }
+
     /* Modal */
     .modal-btn {
         transition: background 250ms;
-        padding: 48px 80px;
+        width: 20vw;
+        height: 18vh;
+        padding: auto;
         border-radius: 4px;
         text-transform: uppercase;
         font-size: 12px;
         letter-spacing: 0.1em;
         margin: 20px 20px;
-        display: inline-block;
+        display: flex;
         text-decoration: none;
         align-self: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     /* Header Elements */
@@ -473,7 +610,7 @@ body {
 
     .about_box {
         width: 500px;
-        height:250px;
+        height: auto;
         margin: 50px auto;
         padding: 0px 20px;
         border: 3px solid #90664B;
@@ -481,8 +618,12 @@ body {
         text-align: center;
     }
 
-    .about_box > h2 {
+    .about_box > div > h2 {
         font-size: 24pt;
+    }
+
+    .about_box > p {
+        font-size: 12pt;
     }
 
     /* Recipe Page*/
