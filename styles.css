@@ -360,6 +360,32 @@ body {
     background-image: url(assets/recipes_lu/salmon.png);
 }
 
+/* Dinner */
+.chicken {
+    background-image: url(assets/recipes_di/chick.png);
+}
+
+.alfredo {
+    background-image: url(assets/recipes_di/alfredo.png);
+}
+
+.chile {
+    background-image: url(assets/recipes_di/chile.png);
+}
+
+/* Dessert */
+.berry {
+    background-image: url(assets/recipes_de/berry.png);
+}
+
+.pie {
+    background-image: url(assets/recipes_de/pie.png);
+}
+
+.sundae {
+    background-image: url(assets/recipes_de/sundae.png);
+}
+
 /* Modal */
 /* This Modal is made through pure CSS, however, it is not ours*/
 /* This CSS was provided through https://webdesign.tutsplus.com/css-only-modal--cms-107772t*/
